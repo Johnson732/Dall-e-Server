@@ -25,7 +25,7 @@ app.post("/api", async (req, res) => {
         headers: {
           "Content-type": "application/json",
           Authorization: `Bearer ${token}`,
-        },
+        },timeout: 10000,
       }
     );
     //console.log("backend3");
